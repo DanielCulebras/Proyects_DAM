@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/campaignbg"
+    android:textAlignment="textEnd"
+    tools:context=".PersonajeActivity">
+
+    <Button
+        android:id="@+id/button_Campaign"
+        android:layout_width="103dp"
+        android:layout_height="50dp"
+        android:background="@drawable/campaign"
+        android:onClick="campaign"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_Supervivencia" />
+
+    <Button
+        android:id="@+id/button_EditarPers"
+        android:layout_width="103dp"
+        android:layout_height="50dp"
+        android:background="@drawable/personajesel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_Campaign" />
+
+    <Button
+        android:id="@+id/button_Pruebas"
+        android:layout_width="106dp"
+        android:layout_height="50dp"
+        android:background="@drawable/scores"
+        android:onClick="score"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_EditarPers" />
+
+    <Button
+        android:id="@+id/button_Supervivencia"
+        android:layout_width="103dp"
+        android:layout_height="50dp"
+        android:background="@drawable/superviencia"
+        android:onClick="survival"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_Opciones"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ajustes"
+        android:onClick="opciones"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="182dp"
+        android:layout_height="182dp"
+        android:layout_marginTop="76dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/knight"
+        android:background="@drawable/opcioneslybg"/>
+
+    <ScrollView
+        android:id="@+id/Scroll_Skills"
+        android:layout_width="342dp"
+        android:layout_height="115dp"
+        android:background="@drawable/opcioneslybg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Scroll_Armas"
+        app:layout_constraintVertical_bias="0.31">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:padding="5dp"
+                    android:text="SKILLS"
+                    android:textAlignment="center"
+                    android:textSize="18dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/bombita"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/marco"
+                    android:contentDescription="@string/todo"
+                    android:onClick="bombita"
+                    android:padding="5dp"
+                    android:src="@drawable/bombita" />
+
+                <ImageView
+                    android:id="@+id/terremoto"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/marco"
+                    android:contentDescription="TODO"
+                    android:onClick="terremoto"
+                    android:padding="5dp"
+                    android:src="@drawable/terremoto" />
+
+                <ImageView
+                    android:id="@+id/rayo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/marco"
+                    android:contentDescription="TODO"
+                    android:onClick="rayo"
+                    android:padding="5dp"
+                    android:src="@drawable/rayo" />
+
+                <ImageView
+                    android:id="@+id/tsunami"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/marco"
+                    android:contentDescription="TODO"
+                    android:onClick="tsunami"
+                    android:padding="5dp"
+                    android:src="@drawable/tsunami" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/Scroll_Armas"
+        android:layout_width="342dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/opcioneslybg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:padding="5dp"
+                    android:text="ARMAS"
+                    android:textAlignment="center"
+                    android:textSize="18dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/espadaMadera"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/marco"
+                    android:contentDescription="TODO"
+                    android:onClick="madera"
+                    android:padding="5dp"
+                    android:src="@drawable/espadamadera" />
+
+                <ImageView
+                    android:id="@+id/espadaHierro"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/marco"
+                    android:contentDescription="TODO"
+                    android:onClick="hierro"
+                    android:src="@drawable/espadahierro" />
+
+                <ImageView
+                    android:id="@+id/espadaDiamante"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/marco"
+                    android:contentDescription="TODO"
+                    android:onClick="diamante"
+                    android:padding="5dp"
+                    android:src="@drawable/espadadiamante" />
+
+                <ImageView
+                    android:id="@+id/espadaObsidiana"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/marco"
+                    android:contentDescription="TODO"
+                    android:onClick="obsidiana"
+                    android:padding="5dp"
+                    android:src="@drawable/espadaobsidiana" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/monedas"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/opcioneslybg"
+        android:textAlignment="textEnd"
+        android:textColor="#000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingRight="5dp"
+        android:text="300"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/monedas"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/monedas" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

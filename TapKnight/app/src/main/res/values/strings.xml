@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">tapknight</string>
+    <string name="campaign">Campaña</string>
+    <string name="supervivencia">Supervivencia</string>
+    <string name="editar_personaje">Editar Personaje</string>
+    <string name="opciones">Opciones</string>
+    <string name="campa_a">Campaña</string>
+    <string name="iniciar_sesion">Iniciar Sesion</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="atk">ATK</string>
+    <string name="def">DEF</string>
+    <string name="s2">S2</string>
+    <string name="sfx">SFX</string>
+    <string name="contactar_con_la_empresa">Contactar con la empresa</string>
+    <string name="s1">S1</string>
+    <string name="musica">Musica</string>
+    <string name="todo">TODO</string>
+
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scoreLY"
+    android:layout_width="500dp"
+    android:layout_height="200dp"
+    android:background="@drawable/opcionesbg"
+    android:layout_gravity="bottom">
+
+
+
+    <ImageView
+        android:id="@+id/fotoPersonaje"
+        android:layout_width="110dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/opcioneslybg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/knight" />
+
+    <TextView
+        android:id="@+id/nombrePersonaje"
+        android:layout_width="110dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/opcioneslybg"
+        android:paddingLeft="5dp"
+        android:text="TextView"
+        android:textColor="#000"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/texto" />
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="201dp"
+        android:layout_height="154dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/opcioneslybg"
+        android:padding="10dp"
+        android:text="TextView"
+        android:textColor="#000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fotoPersonaje" />
+</androidx.constraintlayout.widget.ConstraintLayout>

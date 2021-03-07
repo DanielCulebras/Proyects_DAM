@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/campaignbg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/monedas"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/opcioneslybg"
+        android:textAlignment="textEnd"
+        android:textColor="#000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingRight="5dp"
+        android:text="300"/>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/monedas"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/monedas" />
+
+    <Button
+        android:id="@+id/button_Opciones"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ajustes"
+        android:onClick="opciones"
+        app:layout_constraintBottom_toBottomOf="@+id/button_Campaign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Button
+        android:id="@+id/button_Pruebas"
+        android:layout_width="106dp"
+        android:layout_height="50dp"
+        android:background="@drawable/scores"
+        android:onClick="score"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_EditarPers" />
+
+    <Button
+        android:id="@+id/button_Supervivencia"
+        android:layout_width="103dp"
+        android:layout_height="50dp"
+        android:background="@drawable/superviencia"
+        android:onClick="survival"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_EditarPers"
+        android:layout_width="103dp"
+        android:layout_height="50dp"
+        android:background="@drawable/personaje"
+        android:onClick="editPers"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_Campaign" />
+
+    <Button
+        android:id="@+id/button_Campaign"
+        android:layout_width="103dp"
+        android:layout_height="50dp"
+        android:background="@drawable/campaignsel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_Supervivencia" />
+
+    <ImageView
+        android:id="@+id/imageViewMision"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombreMision"
+        tools:srcCompat="@drawable/mision1" />
+
+    <TextView
+        android:id="@+id/nombreMision"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="156dp"
+        android:background="@drawable/opcioneslybg"
+        android:gravity="center"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Mision 0: Tutorial" />
+
+    <Button
+        android:id="@+id/campaingIzq"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="284dp"
+        android:background="@drawable/arrowleft"
+        android:onClick="campañaIzq"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewMision"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/campaingDer"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="284dp"
+        android:background="@drawable/arrowright"
+        android:onClick="campañaDer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewMision"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="190dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/boton"
+        android:onClick="jugarCampaña"
+        android:text="Jugar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewMision" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

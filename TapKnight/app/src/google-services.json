@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1027356096761",
+    "firebase_url": "https://tapknightfb.firebaseio.com",
+    "project_id": "tapknightfb",
+    "storage_bucket": "tapknightfb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027356096761:android:c02c4e7d83dc59e3cf0a28",
+        "android_client_info": {
+          "package_name": "com.gaia.tapknight"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027356096761-hk9g73i8bteoaaofsbh6o9hgs2ohbufi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpu6FR-EuZFQ7oEVjoiyFAGRk5DBBaVD0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1027356096761-hk9g73i8bteoaaofsbh6o9hgs2ohbufi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

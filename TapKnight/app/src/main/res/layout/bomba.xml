@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    android:background="@drawable/opcionesbg"
+    android:padding="10dp"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/X"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/x"
+
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageViewSkill"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/marco"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/bombita" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="197dp"
+        android:layout_height="70dp"
+        android:background="@drawable/opcioneslybg"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSkill"
+        app:layout_constraintVertical_bias="0.24">
+
+
+        <TextView
+            android:id="@+id/nombreSkill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Bomba"
+            android:textSize="12dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:text="Daño: "
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/dañoSkill"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textSize="10dp"
+                android:textAlignment="textEnd"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="end">
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:text="Enfriamiento: "
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/cdSkill"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textSize="10dp"
+                android:textAlignment="textEnd"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/equiparComprarBomba"
+        android:layout_width="196dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        android:text="Equipar ahora"
+        android:textColor="#FFF"
+        android:gravity="center"
+        android:background="@drawable/boton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

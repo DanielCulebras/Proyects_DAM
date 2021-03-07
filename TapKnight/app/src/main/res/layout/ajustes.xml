@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="550dp"
+    android:background="@drawable/opcionesbg"
+    android:padding="5dp"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/X"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/x"
+
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:background="@drawable/opcioneslybg"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/X"
+        app:layout_constraintVertical_bias="0.041">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/sfx"
+                android:layout_gravity="center_vertical"/>
+
+            <ToggleButton
+                android:id="@+id/SFX"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/boton"
+                android:textColor="#FFF"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/musica"
+                android:layout_gravity="center_vertical"/>
+
+            <ToggleButton
+                android:id="@+id/Musica"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/boton"
+                android:textColor="#FFF"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/contactarAdmin"
+        android:layout_width="302dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="212dp"
+        android:background="@drawable/boton"
+        android:text="@string/contactar_con_la_empresa"
+        android:textColor="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

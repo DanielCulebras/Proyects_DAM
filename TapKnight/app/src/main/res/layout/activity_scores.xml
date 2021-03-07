@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/campaignbg"
+    tools:context=".ScoreActivity" >
+
+    <TextView
+        android:id="@+id/monedas"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/opcioneslybg"
+        android:paddingRight="5dp"
+        android:text="300"
+        android:textAlignment="textEnd"
+        android:textColor="#000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/monedas"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/monedas" />
+
+    <Button
+        android:id="@+id/button_Opciones"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ajustes"
+        android:onClick="opciones"
+        app:layout_constraintBottom_toBottomOf="@+id/button_Campaign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:layout_width="343dp"
+        android:layout_height="565dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/opcioneslybg"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_Opciones">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="LOS MEJORES"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="30dp" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:id="@+id/uno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/unoNum"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="1 -"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/unoNombre"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="Kirei"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/unoScore"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="2000000"
+                android:textAlignment="textEnd"
+                android:textSize="20dp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/unoPts"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="pts"
+                android:textAlignment="textEnd"
+                android:textSize="20dp"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dosNum"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="2 -"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/dosNombre"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="Kirei"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/dosScore"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="1800000"
+                android:textAlignment="textEnd"
+                android:textSize="20dp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/dosPts"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="pts"
+                android:textAlignment="textEnd"
+                android:textSize="20dp"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tresNum"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="3 -"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tresNombre"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="Kirei"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tresScore"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="1500000"
+                android:textAlignment="textEnd"
+                android:textSize="20dp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/tresPts"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="pts"
+                android:textAlignment="textEnd"
+                android:textSize="20dp"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cuatro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cuatroNum"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="4 -"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/cuatroNombre"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="Kirei"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/cuatroScore"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="1400000"
+                android:textAlignment="textEnd"
+                android:textSize="20dp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/cuatroPts"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="pts"
+                android:textAlignment="textEnd"
+                android:textSize="20dp"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cinco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cincoNum"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="5 -"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/cincoNombre"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="Kirei"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/cincoScore"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="1200000"
+                android:textAlignment="textEnd"
+                android:textSize="20dp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/cincoPts"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="pts"
+                android:textAlignment="textEnd"
+                android:textSize="20dp"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/seis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/seisNum"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="6 -"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/seisNombre"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="Kirei"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/seisScore"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="1000000"
+                android:textAlignment="textEnd"
+                android:textSize="20dp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/seisPts"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="pts"
+                android:textAlignment="textEnd"
+                android:textSize="20dp"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/siete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sieteNum"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="7 -"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/sieteNombre"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="Kirei"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/sieteScore"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="900000"
+                android:textAlignment="textEnd"
+                android:textSize="20dp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/sietePts"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="pts"
+                android:textAlignment="textEnd"
+                android:textSize="20dp"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ocho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ochoNum"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="8 -"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/ochoNombre"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="Kirei"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/ochoScore"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="800000"
+                android:textAlignment="textEnd"
+                android:textSize="20dp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/ochoPts"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="pts"
+                android:textAlignment="textEnd"
+                android:textSize="20dp"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nueve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nueveNum"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="9 -"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/nueveNombre"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="Kirei"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/nueveScore"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="600000"
+                android:textAlignment="textEnd"
+                android:textSize="20dp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/nuevePts"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="pts"
+                android:textAlignment="textEnd"
+                android:textSize="20dp"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/diez"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/diezNum"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="10 -"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/diezNombre"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="Kirei"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/diezScore"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="500000"
+                android:textAlignment="textEnd"
+                android:textSize="20dp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/diezPts"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="pts"
+                android:textAlignment="textEnd"
+                android:textSize="20dp"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="Tu mejor puntuacion"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="20dp"
+            tools:ignore="RtlCompat" />
+
+        <LinearLayout
+            android:id="@+id/tu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tuNum"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:text="1 -"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tuNombre"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:text="Kirei"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tuScore"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:text="2000000"
+                android:textAlignment="textEnd"
+                android:textSize="20dp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/tuPts"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="25dp"
+                android:gravity="center_vertical"
+                android:text="pts"
+                android:textAlignment="textEnd"
+                android:textSize="20dp"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_Supervivencia"
+        android:layout_width="103dp"
+        android:layout_height="50dp"
+        android:background="@drawable/superviencia"
+        android:onClick="survival"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_Campaign"
+        android:layout_width="103dp"
+        android:layout_height="50dp"
+        android:background="@drawable/campaign"
+        android:onClick="campaign"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_Supervivencia" />
+
+    <Button
+        android:id="@+id/button_EditarPers"
+        android:layout_width="103dp"
+        android:layout_height="50dp"
+        android:background="@drawable/personaje"
+        android:onClick="editPers"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_Campaign" />
+
+    <Button
+        android:id="@+id/button_Pruebas"
+        android:layout_width="106dp"
+        android:layout_height="50dp"
+        android:background="@drawable/scoressel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_EditarPers" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="49dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/refresh"
+        android:onClick="refresh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
